@@ -1,0 +1,207 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  /* Main Colors - 60-30-10 System */
+  --semantic-bg: #F9FAFB;
+  --semantic-surface: #FFFFFF;
+  --semantic-accent: #2563EB;
+  --semantic-text-primary: #111827;
+  --semantic-text-secondary: #6B7280;
+  --border-light: #E5E7EB;
+
+  /* State Colors */
+  --primary-color: #2563EB;
+  --success-color: #10B981;
+  --warning-color: #F59E0B;
+  --destructive-color: #EF4444;
+
+  /* Fallback legacy colors */
+  --bg-dark: #0F1115;
+  --bg-light: #F9FAFB;
+  --text-primary: #111827;
+  --text-secondary: #6B7280;
+  --text-light: #FFFFFF;
+  --accent-teal: #1F8A70;
+  --accent-orange: #FF6B35;
+}
+
+[data-theme="dark"] {
+  --semantic-bg: #0F1115;
+  --semantic-surface: #1F2937;
+  --semantic-accent: #3B82F6;
+  --semantic-text-primary: #F9FAFB;
+  --semantic-text-secondary: #9CA3AF;
+  --border-light: #374151;
+
+  /* State Colors */
+  --primary-color: #3B82F6;
+  --success-color: #34D399;
+  --warning-color: #FBBF24;
+  --destructive-color: #F87171;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Pretendard, Inter, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+body {
+  background-color: var(--semantic-bg);
+  color: var(--semantic-text-primary);
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Presentation Container */
+.presentation-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--semantic-surface);
+}
+
+/* 1920x1080 Canvas */
+.slide-canvas {
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  background-color: var(--semantic-bg);
+  color: var(--semantic-text-primary);
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography Classes */
+.text-display {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.text-h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.text-h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+.text-h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.text-h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.text-body1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+.text-body2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.text-label {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+/* UI Component Classes */
+.card-base {
+  background-color: var(--semantic-surface);
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  box-shadow: none;
+  /* Flat design */
+}
+
+.kpi-block {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--semantic-accent);
+  border-radius: 8px;
+}
+
+.summary-box {
+  background-color: #F3F4F6;
+  border-left: 4px solid var(--semantic-accent);
+  padding: 24px;
+}
+
+.cta-button {
+  background-color: var(--semantic-accent);
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.tag-badge {
+  background-color: #F3F4F6;
+  color: #4B5563;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Interaction CSS Classes */
+.hover-card {
+  transition: all 200ms ease-in-out;
+}
+
+.hover-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.fade-in-up {
+  animation: fadeInUp 400ms ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
