@@ -11,6 +11,7 @@ import { HypothesisSlide2 } from './slides/HypothesisSlide2';
 import { SolutionProposalSlide } from './slides/SolutionProposalSlide';
 import { SolutionProposalSlide2 } from './slides/SolutionProposalSlide2';
 import { DataDrivenVOCSlide } from './slides/DataDrivenVOCSlide';
+import { MVPModelSlide2 } from './slides/MVPModelSlide2';
 import { MVPSlide } from './slides/MVPSlide';
 import { BusinessExpansionSlide2 } from './slides/BusinessExpansionSlide2';
 import { BusinessExpansionSlide } from './slides/BusinessExpansionSlide';
@@ -43,6 +44,7 @@ function App() {
       <SolutionProposalSlide />
       <SolutionProposalSlide2 />
       <DataDrivenVOCSlide />
+      <MVPModelSlide2 />
       <MVPSlide />
       <BusinessExpansionSlide2 />
       <BusinessExpansionSlide />
